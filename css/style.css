@@ -55,7 +55,7 @@ header div {
   line-height: 1.19;
   letter-spacing: 0.03em;
   align-items: center;
-  padding-right: 93px;
+  margin-right: 93px;
 }
 
 .logo-one {
@@ -98,7 +98,9 @@ nav ul li:last-child {
 }
 
 .contact-inf li a,
-.link-nav li a {
+.link-nav-studio, 
+.link-nav-portfolio,
+.link-nav-contacts {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -134,7 +136,10 @@ nav ul li:last-child {
 
 .link-nav-studio:hover,
 .link-nav-portfolio:hover,
-.link-nav-contacts:hover {
+.link-nav-contacts:hover,
+.link-nav-studio:focus,
+.link-nav-portfolio:focus,
+.link-nav-contacts:focus {
   color: var(--link-color);
 }
 
@@ -468,7 +473,7 @@ nav ul li:last-child {
 
 }
 
-.main-page-section-five div {
+.main-page-section-five a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -504,7 +509,7 @@ nav ul li:last-child {
   fill: currentColor;
 }
 
-.main-page-section-five div:hover , .main-page-section-five div:focus {
+.main-page-section-five a:hover , .main-page-section-five a:focus {
   border: 1px solid var(--link-color);
 }
 
@@ -526,7 +531,9 @@ color: var(--link-color);
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
+
 
 address {
   margin-top: 20px;
@@ -577,15 +584,19 @@ address li:last-child {
 }
 .mail-two:hover,
 .number-two:hover,
-.info-address:hover {
+.info-address:hover,
+.mail-two:focus,
+.number-two:focus,
+.info-address:focus
+ {
   color: var(--link-color);
 }
 
-
+.footer-contacts {
+  margin-right: 70px;
+}
 
 .socials-footer-tittle {
-justify-content: center;
-align-items: center;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.143;
@@ -595,12 +606,25 @@ color: var(--main-color);
 }
 
 .socials-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 100px;
 }
 
+footer .container {
+  display: flex;
+}
 
+.socials-footer-tittle {
+  margin-bottom: 20px;
+}
+
+.socials-footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.socials-footer ul li:last-child {
+  margin-right: 0;
+}
 
 .icon-link-footer {
   display: flex;
@@ -613,11 +637,7 @@ color: var(--main-color);
   color: var(--main-color);
 }
 
-.socials-footer-list {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .team-icon-footer {
   fill: currentColor;
