@@ -583,16 +583,6 @@ address li:last-child {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .socials-footer-tittle {
 justify-content: center;
 align-items: center;
@@ -606,8 +596,10 @@ color: var(--main-color);
 
 .socials-footer {
   display: flex;
-  align-items: inline;
+  align-items: center;
+  justify-content: center;
 }
+
 
 
 .icon-link-footer {
