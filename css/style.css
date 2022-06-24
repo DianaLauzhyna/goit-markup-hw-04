@@ -68,7 +68,8 @@ header div {
 /*navigation*/
 
 .site-nav {
-  margin-right: 331px;
+ /* margin-right: 331px;*/
+  margin-right: 285px;
 }
 
 li {
@@ -96,10 +97,27 @@ nav ul li:last-child {
   padding-right: 0;
 }
 
-.contact-inf li a, .link-nav li a {
+.contact-inf li a,
+.link-nav li a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+
+
+
+
+
+
+.contact-inf a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+
 
 .logo {
   padding-top: 24px;
@@ -137,9 +155,19 @@ nav ul li:last-child {
   color: var(--text-color);
 }
 .mail:hover,
-.number:hover {
+.number:hover,
+.mail:focus,
+.number:focus {
   color: var(--link-color);
 }
+
+
+.mail-icon, 
+.number-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 
 /*fist section*/
 
@@ -155,18 +183,16 @@ nav ul li:last-child {
   padding-bottom: 200px;
 }
 
-
-
-
-
 .main-page-section-one {
-  background-image: url("./images/headerimg.jpg");
+  /*background-image: url("../images/headerimg.jpg");
+  */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/headerimg.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-
-
-
-
 
 .section-one-main-title {
   font-weight: 900;
@@ -242,6 +268,58 @@ nav ul li:last-child {
   color: var(--text-color);
 }
 
+
+
+.antenna, .diagram, .clock, .astronaut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F4FA;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+/*.section-two-list li::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+}
+
+.section-two-list li:nth-child(1)::before {
+  background-image: url(../images/svg_icons/antenna.svg);
+  background-size: 70px;
+}
+
+.section-two-list li:nth-child(2)::before {
+  background-image: url(../images/svg_icons/clock.svg);
+  background-size: 70px;
+}
+
+.section-two-list li:nth-child(3)::before {
+  background-image: url(../images/svg_icons/diagram.svg);
+  background-size: 70px;
+}
+
+.section-two-list li:nth-child(4)::before {
+  background-image: url(../images/svg_icons/astronaut.svg);
+  background-size: 70px;
+}
+*/
+
+
+
+
+
+
+
+
 .section-three-main-title {
   margin-bottom: 50px;
 }
@@ -255,7 +333,7 @@ nav ul li:last-child {
 }
 
 .section-three-main-title,
-.section-four-main-title {
+.section-four-main-title, .section-five-main-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -313,16 +391,17 @@ nav ul li:last-child {
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
+  margin: 14px;
 }
 
 .section-four-text {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 16px;
+  padding-top: 12px;
 }
 
-.section-four-text h3 {
-  padding-bottom: 10px;
-}
+
+
+
 
 .section-four-text-one,
 .section-four-text-two,
@@ -334,6 +413,110 @@ nav ul li:last-child {
   color: var(--text-color);
   text-align: center;
 }
+
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
+.icon-link:hover, .icon-link:focus {
+  background-color: var(--link-color);
+}
+
+.icon-link:hover svg, .icon-link:focus svg {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+.section-five-main-title {
+  margin-bottom: 50px;
+}
+.main-page-section-five ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main-page-section-five div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+}
+
+.main-page-section-five li {
+  margin-right: 30px;
+}
+
+.main-page-section-five li:last-child {
+  margin-right: 0;
+}
+
+.icon-link-company a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106px;
+  height: 60px;
+  
+}
+
+.icon-link-company {
+  color: #afb1b8;
+}
+
+.company-icon {
+  fill: currentColor;
+}
+
+.main-page-section-five div:hover , .main-page-section-five div:focus {
+  border: 1px solid var(--link-color);
+}
+
+.icon-link-company:hover svg, .icon-link-company:focus svg{
+color: var(--link-color);
+}
+
+
+
+
+
+
 
 .info-block {
   background-color: #2f303a;
@@ -398,6 +581,76 @@ address li:last-child {
   color: var(--link-color);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+.socials-footer-tittle {
+justify-content: center;
+align-items: center;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--main-color);
+}
+
+.socials-footer {
+  display: flex;
+  align-items: inline;
+}
+
+
+.icon-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--main-color);
+}
+
+.socials-footer-list {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icon-footer {
+  fill: currentColor;
+}
+
+.icon-link-footer:hover, .icon-link-footer:focus {
+  background-color: var(--link-color);
+}
+
+.icon-link-footer:hover svg, .icon-link-footer:focus svg {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*PORTFOLIO*/
 
 .projects {
@@ -434,12 +687,17 @@ address li:last-child {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  /*box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.1),0px 1px 1px rgba(0, 0, 0, 0.1);*/
 }
 
 div .portfolio-images li {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-images li:hover,
+.portfolio-images li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-images li:nth-child(3n) {
